@@ -1,0 +1,13 @@
+numpy==1.16.4
+scipy
+#tensorflow==1.13.1
+tensorflow_gpu==1.13.1
+tensorflow-probability
+Keras==2.2.4
+scikit-learn==0.24.2
+pillow
+matplotlib
+h5py==2.10.0
+pickle5
+
+

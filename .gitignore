@@ -1,0 +1,28 @@
+
+.idea
+
+docs
+baseline
+
+## too much floders will make git too slow
+data/femnist/data
+data/femnist/meta
+data/sent140/data
+data/sent140/meta
+
+
+**/checkpoints
+*/**/*.json
+*/**/*.pkl
+*/**/*.md5
+*/**/*.png
+*/**/*.dat
+*/**/*.txt
+*/**/*.pyc
+*/**/*.csv
+*/**/*.zip
+*/**/*.zip.1
+*/**/*.mit
+
+# exception to the rule
+#!somefolder/.gitkeep
