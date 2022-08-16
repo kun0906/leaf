@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+# download data and convert to .json format
+
+if [ ! -d "data/all_data" ] || [ ! "$(ls -A data/all_data)" ]; then
+    cd preprocess
+    ./data_to_json.sh
+    cd ..
+fi
+
+NAME="sent140" # name of the dataset, equivalent to directory name
+
+cd ../utils
+./preprocess.sh --name $NAME --sf 0.5 -k 100 -s niid -t sample --spltseed 1
+#./preprocess.sh --name $NAME $@
+
+cd ../$NAME
+
+pwd
+
+./get_embs.sh
+
+echo 'finished.'
